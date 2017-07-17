@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <!--Triying local CSS-->
+    <link rel="stylesheet" type="text/css" href="Pricing_mainCSS.css">
+    <script>
+      window.onload=function(){
+        var maxRows=5, maxColumns=5;
+        var calcTable=document.createElement("table");
+        calcTable.id="calcTable";
+        for (var n=0;n<maxRows;n++){
+          var currentRow = document.createElement('tr');
+          for (var m=0;m<maxColumns;m++){
+            currentRow.appendChild(document.createElement('td'));
+          }
+          calcTable.appendChild(currentRow);
+        }
+        var mainField = document.getElementById("mainField");
+        mainField.appendChild(calcTable);
+      };
+    </script>
+  </head>
+  <body>
+    <header>The header of the new pricing</header>
+    <nav>
+      <ul>
+        <li>Menu 1</li>
+        <li>Menu 2</li>
+        <li>Menu 3</li>
+      </ul>
+    </nav>
+    <fieldset id="mainField">
+      <legend>The new pricing field</legend>
+    </fieldset>
+  </body>
+</html>
