@@ -1,9 +1,14 @@
-  body{
-    width:80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  table{
-    width:auto;
-
-  }
+body{
+  width:80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+table{
+  width:100%;
+  border-collapse: collapse;
+  border: 0.5px solid grey;
+}
+td{
+  border:0.5px solid grey;
+  height:10px;
+}
